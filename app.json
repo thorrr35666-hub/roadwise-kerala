@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "RoadWise Kerala",
+    "slug": "roadwise-kerala",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "roadwisekerala",
+    "ios": {"supportsTablet": true, "bundleIdentifier": "in.roadwise.kerala"},
+    "android": {"package": "in.roadwise.kerala", "permissions": ["ACCESS_COARSE_LOCATION","ACCESS_FINE_LOCATION"]},
+    "plugins": [
+      ["expo-image-picker", {"photosPermission":"RoadWise uses selected photos to document road-safety defects.","cameraPermission":"RoadWise uses the camera to document road-safety defects."}],
+      ["expo-location", {"locationWhenInUsePermission":"RoadWise uses your location to attach coordinates to a road-defect report."}]
+    ]
+  }
+}
