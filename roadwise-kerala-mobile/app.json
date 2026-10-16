@@ -6,11 +6,37 @@
     "orientation": "portrait",
     "userInterfaceStyle": "light",
     "scheme": "roadwisekerala",
-    "ios": {"supportsTablet": true, "bundleIdentifier": "in.roadwise.kerala"},
-    "android": {"package": "in.roadwise.kerala", "permissions": ["ACCESS_COARSE_LOCATION","ACCESS_FINE_LOCATION"]},
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "in.roadwise.kerala"
+    },
+    "android": {
+      "package": "in.roadwise.kerala",
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
     "plugins": [
-      ["expo-image-picker", {"photosPermission":"RoadWise uses selected photos to document road-safety defects.","cameraPermission":"RoadWise uses the camera to document road-safety defects."}],
-      ["expo-location", {"locationWhenInUsePermission":"RoadWise uses your location to attach coordinates to a road-defect report."}]
-    ]
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "RoadWise uses selected photos to document road-safety defects.",
+          "cameraPermission": "RoadWise uses the camera to document road-safety defects."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "RoadWise uses your location to attach coordinates to a road-defect report."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "e72e3698-3328-4565-ba10-dee2dc4420ac"
+      }
+    }
   }
 }
